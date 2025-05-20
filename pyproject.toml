@@ -1,0 +1,20 @@
+[project]
+name = "sctoolkit"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "LinearParadox", email = "alexei.martsinkovskiy@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "scanpy>=1.11.1",
+    "scikit-learn>=1.5.2",
+]
+
+[project.scripts]
+sctoolkit = "sctoolkit:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
